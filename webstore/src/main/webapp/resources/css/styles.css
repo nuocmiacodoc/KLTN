@@ -1,0 +1,152 @@
+body{
+  font-family: arial;
+}
+
+h1,h2,h3,h4,h5,p{
+  margin:0;
+}
+
+.orderTitle{
+  height:200px;
+  background-color: #537ca2;
+}
+.orderTitle h3 {
+    color: white;
+    vertical-align: middle;
+    /* text-align: center; */
+    vertical-align: middle;
+    line-height: 200px;
+    font-size: 55px;
+    margin: 0;
+    font-family: arial;
+    padding-left: 50px;
+}
+
+.blTitle p {
+    margin: 0;
+    font-family: arial;
+    padding-top: 60px;
+    font-size: 30px;
+    color: #666666;
+    line-height: 40px;
+}
+
+.insideContainer{
+  padding:0px 40px 0 40px;
+}
+
+.orderNum h3 {
+    font-size: 50px;
+    margin: 0;
+    padding-top: 35px;
+    opacity: .8;
+}
+
+.order-bl-detail{
+  display: flex;
+}
+.order-bl-detail h3:first-child{
+  flex:3;
+  border:2px solid #cccccc;
+    padding: 15px 30px 15px 10px;
+    opacity: 0.8;
+
+}
+
+
+
+.order-bl-detail h3:nth-child(2){
+  border:2px solid #cccccc;
+  flex:1;
+    padding: 15px 10px 15px 10px;
+  opacity: 0.65;
+  font-weight: 400;
+}
+
+
+.product-detail{
+  display: flex;
+
+}
+.product-detail:first-child{
+  opacity: .9;
+
+}
+.product-detail:nth-child(2){
+  opacity: .65;
+  border-bottom:5px solid #cccccc;
+}
+
+.product-detail:nth-child(2) h3{
+  font-weight: 400;
+}
+
+.product-detail h3:first-child{
+  flex:2;
+  border:2px solid #cccccc;
+      padding: 15px 10px 15px 10px;
+}
+
+.product-detail h3:nth-child(2){
+  border:2px solid #cccccc;
+  flex:1;
+      padding: 15px 10px 15px 10px;
+}
+.product-detail h3:nth-child(3){
+  border:2px solid #cccccc;
+  flex:1;
+      padding: 15px 10px 15px 10px;
+}
+.customerDetail p{
+  opacity: .9;
+  font-size:20px;
+}
+.customerDetail p span{
+  font-weight: bold;
+
+}
+
+.customerDetail p:nth-child(2){
+  padding-top:30px;
+}
+
+.bill-ship{
+  display: flex;
+  padding-top:35px;
+}
+
+.billContainer{
+  flex:1
+}
+.billContainer h3{
+  font-size: 50px;
+    margin: 0;
+    opacity: .8;
+}
+.billContainer p:nth-child(2){
+  padding-top:20px;
+}
+.billContainer p{
+  padding-top:10px;
+  font-size:20px;
+  opacity: .9;
+}
+
+.shipContainer{
+  flex:1
+}
+.shipContainer h3{
+  font-size: 50px;
+    margin: 0;
+    opacity: .8;
+}
+
+.shipContainer p:nth-child(2){
+  padding-top:20px;
+}
+
+.shipContainer p{
+  padding-top:10px;
+  font-size:20px;
+  opacity: .9;
+}

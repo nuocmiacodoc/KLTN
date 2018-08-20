@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+   "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+   
+   <definition name="baseLayout" template="/WEB-INF/layouts/template/baseLayout.jsp">
+      <put-attribute name="title" value="Sample Title" />
+      <put-attribute name="menu" value="/WEB-INF/views/menu.jsp" />
+      <put-attribute name="big-slider" value="/WEB-INF/views/bigSliderAndSideMenu.jsp" />
+      <put-attribute name="content" value="" />
+      <put-attribute name="footer" value="/WEB-INF/layouts/template/footer.jsp" />
+   </definition>
+   
+   <definition name="welcome" extends="baseLayout">
+      <put-attribute name="title" value="Web Store" />
+      <put-attribute name="content" value="/WEB-INF/views/products.jsp" />
+   </definition>
+   
+   <definition name="products" extends="baseLayout">
+      <put-attribute name="title" value="Products" />
+      <put-attribute name="content" value="/WEB-INF/views/products.jsp" />
+   </definition>
+   
+   <definition name="product" extends="baseLayout">
+      <put-attribute name="title" value="Product" />
+      <put-attribute name="big-slider" value="/WEB-INF/views/bigSlider.jsp" />
+      <put-attribute name="content" value="/WEB-INF/views/product.jsp" />
+   </definition>
+   
+   <definition name="addProduct" extends="baseLayout">
+      <put-attribute name="title" value="Products" />
+      <put-attribute name="big-slider" value="" />
+      <put-attribute name="content" value="/WEB-INF/views/addProduct.jsp" />
+      <put-attribute name="footer" value="" />
+   </definition>
+   
+   <definition name="login" extends="baseLayout">
+      <put-attribute name="title" value="Login" />
+      <put-attribute name="big-slider" value="" />
+      <put-attribute name="content" value="/WEB-INF/views/login.jsp" />
+   </definition>
+   
+   <definition name="register" extends="baseLayout">
+      <put-attribute name="title" value="Register" />
+      <put-attribute name="big-slider" value="" />
+      <put-attribute name="content" value="/WEB-INF/views/register.jsp" />
+   </definition>
+   
+   <definition name="cart" extends="baseLayout">
+      <put-attribute name="title" value="Shopping Cart" />
+      <put-attribute name="big-slider" value="" />
+      <put-attribute name="content" value="/WEB-INF/views/cart.jsp" />
+   </definition>
+    
+   <definition name="dashboard" extends="baseLayout">
+      <put-attribute name="title" value="Admin DashBoard" />
+      <put-attribute name="menu" value="" />
+      <put-attribute name="big-slider" value="" />
+      <put-attribute name="content" value="/WEB-INF/views/dashboard.jsp" />
+      <put-attribute name="footer" value="" />
+   </definition>
+   
+   <definition name="showbycategory" extends="baseLayout">
+      <put-attribute name="title" value="List Products" />
+      <put-attribute name="big-slider" value="/WEB-INF/views/bigSlider.jsp" />
+      <put-attribute name="content" value="/WEB-INF/views/showbycategory.jsp" />
+   </definition>
+   
+   <definition name="userInfomation" extends="baseLayout">
+      <put-attribute name="title" value="UserInfo" />
+      <put-attribute name="big-slider" value="" />
+      <put-attribute name="content" value="/WEB-INF/views/userInfomation.jsp" />
+   </definition>
+      
+</tiles-definitions>
