@@ -3,16 +3,15 @@ package com.packt.webbi.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 @Controller
 @RequestMapping("/")
 public class HomeController {
 
 	@RequestMapping
-	public String home(Model model) {
+	public String welcome(Model model) {
 
-		return "welcome";
+		return "redirect:/market/products";
 	}
 	
 	@RequestMapping("/welcome/greeting")
